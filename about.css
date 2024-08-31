@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", cursive;
+  background-image: url('one.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    background: #04202b;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 10px #05498d;
+}
+header .logo{
+    position: absolute;
+    color: #05498d;
+    margin-left: -1100px;
+}
+#side{
+    width: 40px;
+    display: none;
+}
+#cancel{
+    width: 40px;
+    display: none;
+}
+header nav{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 45%;
+}
+header nav a{
+    margin: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fefefe;
+
+}
+
+main{
+    position: absolute;
+}
+
+main .container{
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main .container .content h1{
+    font-size: 2rem;
+    color: #05498d;
+    padding: 30PX;
+}
+
+main .container .content p{
+    font-size: 1.5rem;
+    color: #111;
+   padding: 60px;
+   
+   font-weight: 700;
+}
+main .container .content img{
+    width: 450px;
+    border-radius: 10px 10px 90px;
+    mix-blend-mode: multiply;
+  
+    height: 400px;
+    margin-top: 40px;
+    margin-left: -40px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 650px;
+    width: 100%;
+    background: #222;
+    gap: 150px;
+}
+footer .content{
+    padding-top: 50px;
+    color: #fefefe;
+}
+
+footer .content .imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .content ul{
+    list-style: none;
+    gap: 10px;
+}
+footer .content li{
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px;
+}
+footer .content h2{
+    color: #05498d;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+@media(max-width:1255px){
+   
+    header nav{
+        margin-left: 43%;
+    }
+    header .logo{
+        position: absolute;
+        color: #05498d;
+        margin-left: -1000px;
+    }
+    footer{
+        gap: 20px;
+    }
+}
+
+@media(max-width:1130px){
+   
+    header nav{
+        margin-left: 38%;
+    }
+    header .logo{
+        position: absolute;
+        color: #05498d;
+        margin-left: -900px;
+    }
+    main .container .content h1{
+        font-size: 1.7rem;
+        
+    }
+    main .container .content p{
+        font-size: 1.2rem;
+    }
+    main .container .content img{
+        width: 350px;
+        height: 350px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 650px;
+        width: 100%;
+        background: #222;
+        gap: 20px;
+    }
+    footer .content{
+        padding-top: 50px;
+        color: #fefefe;
+    }
+    
+    footer .content .imgs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    footer .content ul{
+        list-style: none;
+        gap: 10px;
+    }
+    footer .content li{
+        color: #fff;
+        font-size: 1rem;
+        padding: 8px;
+    }
+    footer .content h2{
+        color: #05498d;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    footer .content h3{
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width:1060px){
+   
+    header nav{
+        margin-left: 30%;
+    }
+    header nav a{
+        font-size: 1.2rem;
+    }
+    header .logo{
+        position: absolute;
+        color: #05498d;
+        margin-left: -800px;
+    }
+}
+@media(max-width:935px){
+   
+    header nav{
+        margin-left: 30%;
+    }
+    header nav a{
+        font-size: 1rem;
+    }
+    header .logo{
+        position: absolute;
+        color: #05498d;
+        margin-left: -700px;
+    }
+}
+
+@media(max-width:840px){
+   
+    header nav{
+        margin-left: 25%;
+        
+    }
+    header nav a{
+        font-size: 1rem;
+        margin: 20px;
+    }
+    header .logo{
+        position: absolute;
+        color: #05498d;
+        margin-left: -650px;
+        font-size: 0.8rem;
+    }
+    main .container .content img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width:776px){
+       header{
+        background:    #05498d;
+       }
+        header nav{
+            background: #222;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 580px;
+            margin-left: 370px;
+            width: 50%;
+            height: 500px;
+            gap: 2px;
+    }
+   
+    header nav a{
+        color: #fff;
+    }
+    header .logo{
+        margin-left: -550px;
+        color: #fefefe;
+    }
+    #side{
+        display: block;
+        position: absolute;
+        margin-left: 600px;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        margin-left: 600px;
+    }
+    main .container {
+        flex-direction: column;
+    }
+   
+    footer{
+        margin-top: 900px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:665px){
+   
+    header .logo{
+        position: absolute;
+        color: #fff;
+        margin-left: -500px;
+    }
+    main .container .content h1{
+        font-size: 1.5rem;
+        
+    }
+    main .container .content p{
+        font-size: 1.1rem;
+    }
+    main .container .content img{
+        width: 350px;
+        height: 350px;
+    }
+   
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+        gap: 5px;
+    }
+    footer .content{
+        padding-top: 50px;
+        color: #fefefe;
+        margin-left: -250px;
+    }
+    
+    footer .content .imgs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    footer .content ul{
+        list-style: none;
+        gap: 10px;
+    }
+    footer .content li{
+        color: #fff;
+        font-size: 1rem;
+        padding: 8px;
+    }
+    footer .content h2{
+        color: #05498d;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    footer .content h3{
+        font-size: 1rem;
+    } 
+}
+@media(max-width:650px){
+    header .logo{
+        margin-left: -480px;
+        color: #fefefe;
+    }
+    #side{
+        display: block;
+        position: absolute;
+        margin-left: 480px;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        margin-left: 480px;
+    }
+    footer{
+        margin-top: 999px;
+    }
+    footer .content{
+        padding-top: 50px;
+        color: #fefefe;
+        margin-left: -50px;
+    }
+}
+@media(max-width:585px){
+    header .logo{
+        margin-left: -410px;
+        color: #fefefe;
+    }
+    #side{
+        display: block;
+        position: absolute;
+        margin-left: 480px;
+        width: 50px;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        margin-left: 480px;
+        width: 50px;
+    }
+    footer .content{
+        padding-top: 50px;
+        color: #fefefe;
+        margin-left: -50px;
+    }
+}
+
+@media(max-width:529px){
+    header .logo{
+        margin-left: -400px;
+        color: #fefefe;
+    }
+    header nav{
+        width: 60%;
+        margin-left: 205px;
+    }
+    #side{
+        display: block;
+        position: absolute;
+        margin-left: 410px;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        margin-left: 410px;
+    }
+    footer .content{
+        padding-top: 50px;
+        color: #fefefe;
+        margin-left: -50px;
+    }
+}
+@media(max-width:500px){
+    header .logo{
+        margin-left: -300px;
+        color: #fefefe;
+    }
+    header nav{
+        width: 60%;
+        margin-left: 205px;
+    }
+    #side{
+        display: block;
+        position: absolute;
+        margin-left: 300px;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        margin-left: 300px;
+    }
+    main .container .content p{
+        padding: 50px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    main .container .content img{
+        width: 300px;
+        height: 300px;
+        margin-left:-12px ;
+    }
+    footer{
+        margin-top: 1100px;
+    }
+    footer .content{
+        padding-top: 50px;
+        color: #fefefe;
+        margin-left: -10px;
+    }
+    footer .content h2{
+        font-size: 1rem;
+    }
+    footer .content li{
+        font-size: 0.8rem;
+    }
+
+    footer .content h3{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:400px){
+    header .logo{
+        margin-left: -200px;
+        color: #fefefe;
+    }
+    header nav{
+        width: 60%;
+        margin-left: 155px;
+    }
+    #side{
+        display: block;
+        position: absolute;
+        margin-left: 300px;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        margin-left: 300px;
+    }
+    main .container .content p{
+        padding: 50px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    main .container .content img{
+        width: 250px;
+        height: 250px;
+        
+    }
+    footer{
+        margin-top: 1100px;
+    }
+    footer .content{
+        padding-top: 50px;
+        color: #fefefe;
+        margin-left: -10px;
+    }
+    footer .content h2{
+        font-size: 1rem;
+    }
+    footer .content li{
+        font-size: 0.8rem;
+    }
+
+    footer .content h3{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:360px){
+    #side{
+        display: block;
+        position: absolute;
+        margin-left: 260px;
+    }
+    #cancel{
+        display: none;
+        position: absolute;
+        margin-left: 260px;
+    }
+    main .container .content p{
+        padding: 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+    main .container .content img{
+        margin-left:-12px ;
+    }
+}

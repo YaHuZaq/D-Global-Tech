@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="logo">D Global Tech</span>
+        <img src="side3.png" id="side" onclick="shows()">
+        <img src="cancel.png" id="cancel" onclick="hides()">
+         <nav id="mores">
+           <a href="index.html">Home</a>
+           <a href="#">About</a>
+           <a href="service.html">Services</a>
+           <a href="ratings.html">Ratings</a>
+           <a href="contact.html">Contact</a>
+         </nav>
+      </header>
+
+      <main>
+        <div class="container" >
+            <div class="content">
+                <h1>About us</h1>
+                <p>We D Global Tech were specialised on creating appealing contents that fits your imagination based on 
+                  dynamic website, web Application or even cross platform android application with responsiveness
+                  and friendly user Interface.</p>
+
+            </div>
+
+            <div class="content">
+                <img src="END8.png" alt="">
+            </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="content" id="first">
+           <ul>
+              <h2>What do you want?</h2>
+              <li>Portfolio.</li>
+              <li>E-commerce website.</li>
+              <li>Landing page.</li>
+              <li>Blog.</li>
+           </ul>
+        </div>
+  
+       
+  
+        <div class="content">
+         <h2>Our social links</h2>
+         <div class="imgs">
+          <img src="facebook.png" width="40px">
+          <img src="insta.png" width="40px">
+          <img src="twitter.png" width="40px">
+          <img src="whatsapp.png" width="40px">
+         </div>
+       </div>
+  
+       <div class="content" >
+          <ul>
+             <h2>Address</h2>
+             <img src="location3.png" width="50px">
+              <h3>Saminu turaki street darazo LGA Bauchi State Nigeria</h3>
+  
+              <h2>Call</h2>
+              <img src="call1.png" width="50px">
+              <h3>+234 8135626974</h3>
+          </ul>
+       </div>
+  
+  
+       <div class="content">
+          <h3>  © 2024 D Global Tech. All Rights Reserved</h3>
+       </div>
+     </footer>
+
+
+     <script src="./javascript/aos.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        function shows(){
+           document.getElementById("mores").style.display = "flex";
+           document.getElementById("side").style.display = "none";
+           document.getElementById("cancel").style.display = "block";
+        }
+        function hides(){
+           document.getElementById("mores").style.display = "none";
+           document.getElementById("side").style.display = "block";
+           document.getElementById("cancel").style.display = "none";
+        }
+      </script>   
+</body>
+</html>

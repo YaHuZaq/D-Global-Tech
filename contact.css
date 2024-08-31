@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", cursive;
+  background-image: url('END1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    background: #04202b;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 10px #05498d;
+}
+header .logo{
+    position: absolute;
+    margin-left: -1200px;
+    color: #05498d;
+}
+#side{
+  width: 50px;
+  display: none;
+}
+#cancel{
+  width: 50px;
+  display: none;
+}
+header nav{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+}
+header nav a{
+    margin: 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fefefe;
+
+}
+main{
+  display: flex;
+  padding: 100px 80px;
+  flex-direction: column;
+}
+
+main .container h1{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+main .container .form-container form{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+main .container .form-container form input{
+  padding: 15px 20px;
+  font-family: "Poppins", cursive;
+  width: 300px;
+  border: 1px solid #333;
+  outline: none;
+  border-radius: 5px;
+}
+
+main .container .form-container form input::placeholder,main .container .form-container form #text::placeholder{
+  color: #05498d;
+  font-size: 18px;
+}
+
+
+main .container .form-container form #text{
+  padding: 15px 20px;
+  font-family: "Poppins", cursive;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #333;
+  outline: none;
+  border-radius: 5px;
+}
+main .container .form-container form button{
+  padding: 15px 30px;
+  font-size: 19px;
+  font-family: "Poppins", cursive;
+  width: 350px;
+  border: 1px solid #333;
+  outline: none;
+  border-radius: 5px;
+  background: #05498d;
+  color: #fefefe;
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  background: #222;
+  gap: 150px;
+}
+footer .content{
+  padding-top: 50px;
+  color: #fefefe;
+}
+
+footer .content .imgs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .content ul{
+  list-style: none;
+  gap: 10px;
+}
+footer .content li{
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px;
+}
+footer .content h2{
+  color: #05498d;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+@media(max-width:1330px){
+  header .logo{
+    margin-left: -1100px;
+  }
+}
+
+
+@media(max-width:1232px){
+  header .logo{
+    margin-left: -1000px;
+  }
+}
+
+@media(max-width:1170px){
+  header .logo{
+    margin-left: -900px;
+  }
+  header nav{
+    margin-left: 40%;
+  }
+  footer{
+    gap: 40px;
+  }
+}
+
+@media(max-width:1050px){
+  header .logo{
+    margin-left: -800px;
+  }
+
+  header nav{
+    margin-left: 37%;
+  }
+
+  header nav a{
+    margin: 15px;
+  }
+}
+
+@media(max-width:950px){
+  header .logo{
+    margin-left: -700px;
+  }
+
+  header nav{
+    margin-left: 32%;
+  }
+
+  header nav a{
+    margin: 15px;
+  }
+}
+
+@media(max-width:830px){
+  header .logo{
+    margin-left: -600px;
+  }
+
+  header nav{
+    margin-left: 37%;
+  }
+
+  header nav a{
+    margin: 15px;
+    font-size: 1rem;
+  }
+
+  footer{
+    gap: 30px;
+  }
+
+  footer .content h2{
+    font-size: 1.4rem;
+  }
+
+  footer .content ul{
+    font-size: 1.1rem;
+  }
+  footer .content h3{
+    font-size: 1rem;
+  }
+}
+
+
+@media(max-width:776px){
+  header{
+   background:    #05498d;
+  }
+   header nav{
+       background: #222;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 580px;
+       margin-left: 370px;
+       width: 50%;
+       height: 500px;
+       gap: 2px;
+}
+
+header nav a{
+   color: #fff;
+}
+header .logo{
+   margin-left: -500px;
+   color: #fefefe;
+}
+#side{
+   display: block;
+   position: absolute;
+   margin-left: 500px;
+}
+#cancel{
+   display: none;
+   position: absolute;
+   margin-left: 500px;
+}
+}
+
+
+
+
+@media(max-width:650px){
+  header{
+   background:    #05498d;
+  }
+   header nav{
+       background: #222;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 580px;
+       margin-left: 370px;
+       width: 50%;
+       height: 500px;
+       gap: 2px;
+}
+
+header nav a{
+   color: #fff;
+}
+header .logo{
+   margin-left: -400px;
+   color: #fefefe;
+}
+#side{
+   display: block;
+   position: absolute;
+   margin-left: 450px;
+}
+#cancel{
+   display: none;
+   position: absolute;
+   margin-left: 450px;
+}
+footer{
+
+  flex-direction: column;
+}
+
+}
+
+@media(max-width:550px){
+  header{
+   background:    #05498d;
+  }
+   header nav{
+       background: #222;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 580px;
+       margin-left: 270px;
+       width: 70%;
+       height: 500px;
+       gap: 2px;
+}
+
+header nav a{
+   color: #fff;
+}
+header .logo{
+   margin-left: -350px;
+   color: #fefefe;
+}
+#side{
+   display: block;
+   position: absolute;
+   margin-left: 400px;
+}
+#cancel{
+   display: none;
+   position: absolute;
+   margin-left: 400px;
+}
+}
+
+@media(max-width:480px){
+  header{
+   background:    #05498d;
+  }
+   header nav{
+       background: #222;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 580px;
+       margin-left: 170px;
+       width: 70%;
+       height: 500px;
+       gap: 2px;
+}
+
+header nav a{
+   color: #fff;
+}
+header .logo{
+   margin-left: -320px;
+   color: #fefefe;
+}
+#side{
+   display: block;
+   position: absolute;
+   margin-left: 350px;
+}
+#cancel{
+   display: none;
+   position: absolute;
+   margin-left: 350px;
+}
+main .container h1{
+  font-size: 1.4rem;
+}
+}
+
+@media(max-width:450px){
+  header{
+   background:    #05498d;
+  }
+   header nav{
+       background: #222;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 580px;
+       margin-left: 170px;
+       width: 70%;
+       height: 500px;
+       gap: 2px;
+}
+
+header nav a{
+   color: #fff;
+}
+header .logo{
+   margin-left: -250px;
+   color: #fefefe;
+}
+#side{
+   display: block;
+   position: absolute;
+   margin-left: 280px;
+}
+#cancel{
+   display: none;
+   position: absolute;
+   margin-left: 280px;
+}
+main .container h1{
+  font-size: 1.4rem;
+}
+main .container .form-container form input{
+  padding: 15px 20px;
+  width: 250px;
+}
+main .container .form-container form #text
+{
+  padding: 15px 20px;
+  width: 250px;
+}
+main .container .form-container form button{
+  padding: 15px 20px;
+  width: 300px;
+}
+}
+
+@media(max-width:400px){
+  header{
+   background:    #05498d;
+  }
+   header nav{
+       background: #222;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 580px;
+       margin-left: 170px;
+       width: 70%;
+       height: 500px;
+       gap: 2px;
+}
+
+header nav a{
+   color: #fff;
+}
+header .logo{
+   margin-left: -200px;
+   color: #fefefe;
+   font-size: 1rem;
+}
+#side{
+   display: block;
+   position: absolute;
+   margin-left: 250px;
+}
+#cancel{
+   display: none;
+   position: absolute;
+   margin-left: 250px;
+}
+main .container h1{
+  font-size: 1.2rem;
+}
+main .container .form-container form input{
+  padding: 15px 20px;
+  width: 250px;
+}
+main .container .form-container form #text
+{
+  padding: 15px 20px;
+  width: 250px;
+}
+main .container .form-container form button{
+  padding: 15px 20px;
+  width: 300px;
+}
+}
+
+@media(max-width:350px){
+  header{
+   background:    #05498d;
+  }
+   header nav{
+       background: #222;
+       display: none;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 580px;
+       margin-left: 170px;
+       width: 70%;
+       height: 500px;
+       gap: 2px;
+}
+
+header nav a{
+   color: #fff;
+}
+header .logo{
+   margin-left: -190px;
+   color: #fefefe;
+   font-size: 1rem;
+}
+#side{
+   display: block;
+   position: absolute;
+   margin-left: 190px;
+}
+#cancel{
+   display: none;
+   position: absolute;
+   margin-left: 190px;
+}
+main .container h1{
+  font-size: 1.1rem;
+}
+main .container .form-container form input{
+  padding: 15px 20px;
+  width: 220px;
+}
+main .container .form-container form #text
+{
+  padding: 15px 20px;
+  width: 220px;
+}
+main .container .form-container form button{
+  padding: 15px 20px;
+  width: 280px;
+}
+}
